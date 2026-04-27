@@ -1,0 +1,81 @@
+# Theme for GRUB2
+# Copyright © 2026 M1dcccc4 (M1dcccc4@gmail.com)
+# Based on theme "archlinux" from GutsBlack (https://github.com/Jacksaur/Gorgeous-GRUB (hosted in this github repo)) 
+# Icons repainted from theme "hyperfluent-arch" (https://github.com/Coopydood/HyperFluent-GRUB-Theme)
+# DISCLAIMER: This theme is for personal learning/research only. All game assets belong to their repective copyright holders.
+# License: GNU GPL v2 or (at your option) any later version.
+
+
+#general settings
+message-font: "DejaVu Sans Mono Bold 14"
+title-text: ""
+message-color: "#ffffff"
+message-bg-color: "#000"
+desktop-image: "background.png"
+desktop-color: "#495585 "
+terminal-box: "window_*.png"
+terminal-font: "DejaVu Sans Mono Regular 14"
+
++ progress_bar {
+  id = "__timeout__"
+  top = 95%-30
+  left = 50%-925
+  height = 30
+  width = 1850
+  bar_style = "progress_bar_*.png"
+  highlight_style = "progress_highlight_*.png"
+}
+
++ image {
+        top = 100%-45
+        left = 4%
+        width = 29
+        height = 29
+        file = "spin.png"
+}
+
++ image {
+        top = 18
+        left = 28
+        width = 140
+        height = 46
+        file="title.png"
+}
+
+
++ image {
+        top = 50%-324
+        left = 50%-116
+        width = 232
+        height = 106
+        file="bootoption.png"
+}
+
++ boot_menu {
+        left = 50%-600
+        width = 1200
+        top = 50%-324
+        height = 648
+        item_font = "Nowar 20"
+        item_color = "#354f5e"
+        selected_item_font = "Nowar 20"
+        selected_item_color = "#354f5e"
+        icon_height = 80
+        icon_width = 80
+        item_height = 80
+        item_padding = 0
+        item_icon_space = 15
+        item_spacing = 50
+        item_pixmap_style = "item_*.png"
+        selected_item_pixmap_style = "selected_*.png"
+        menu_pixmap_style = "window_*.png"
+}
+
++ label {
+        id = "__timeout__"
+        top = 100%-50
+        left = 7%
+        color = "#537b92"
+        font = "Nowar 20"
+        text = "将在 %d 秒后启动所选项，按Enter进入所选系统，按c进入grub终端，按e编辑所选项。"
+}
